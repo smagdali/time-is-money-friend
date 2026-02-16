@@ -45,17 +45,10 @@
 
     var currentSort = params.get(rule.sortParam);
 
-    // Sort already present — save as sticky preference, don't redirect
-    if (currentSort) {
-      if (currentSort !== prefs[sortKey]) {
-        var update = {};
-        update[sortKey] = currentSort;
-        chrome.storage.local.set(update);
-      }
-      return;
-    }
+    // URL already has the correct sort — nothing to do
+    if (currentSort === prefs[sortKey]) return;
 
-    // No sort param = site defaulted to "relevance" — apply recency preference
+    // Either no sort (site defaulted to "relevance") or wrong sort — apply preference
     params.set(rule.sortParam, prefs[sortKey]);
 
     // Set any additional params (e.g. GitHub needs o=desc alongside s=updated)

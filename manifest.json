@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Relevance Switcher",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Overrides 'relevance' sort defaults to 'newest' across search and shopping sites",
   "permissions": ["storage"],
   "action": {
