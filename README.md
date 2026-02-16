@@ -2,11 +2,13 @@
 
 > *"Time is money, friend!"* — every Goblin NPC in World of Warcraft
 
-Browser extension that overrides "relevance" sort defaults to **newest/most recent** across search and shopping sites. Because relevance is just what they want you to see — recency is what's actually new.
+Browser extension that overrides "relevance" sort defaults to **newest/most recent** across search and shopping sites.
+
+"Relevance" on most platforms doesn't mean relevant to *you* — it means relevant to *their bottom line*. Promoted listings, higher-margin products, sponsored results, and paid placements all get boosted under the "relevance" label. Sorting by newest strips that away and shows you what's actually there.
 
 ## What it does
 
-- Automatically switches sort order from "relevance" to "newest" on supported sites
+- Replaces "relevance" sorting with recency across shopping, jobs, dev tools, property, and forums
 - Per-site toggle — enable/disable and choose sort order for each site individually
 - Works across 23 sites in 6 categories
 
