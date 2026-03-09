@@ -1,12 +1,23 @@
 {
   "manifest_version": 3,
-  "name": "Relevance Switcher",
+  "name": "Time Is Money, Friend",
   "version": "0.5.1",
   "description": "Overrides 'relevance' sort defaults to 'newest' across search and shopping sites",
   "permissions": ["storage"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Relevance Switcher"
+    "default_title": "Time Is Money, Friend",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+    }
   },
   "content_scripts": [
     {
