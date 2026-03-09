@@ -49,6 +49,7 @@ var SITES = {
     name: "Reddit",
     hostPattern: /\.reddit\.com$/,
     searchPaths: ["/search"],
+    spa: true,
     sortParam: "sort",
     sortOptions: [
       { value: "new", label: "New" },
@@ -77,6 +78,7 @@ var SITES = {
     name: "GitHub",
     hostPattern: /github\.com$/,
     searchPaths: ["/search"],
+    spa: true,
     sortParam: "s",
     additionalParams: { o: "desc" },
     sortOptions: [
@@ -210,6 +212,7 @@ var SITES = {
     name: "LinkedIn Jobs",
     hostPattern: /\.linkedin\.com$/,
     searchPaths: ["/jobs/search"],
+    spa: true,
     sortParam: "sortBy",
     sortOptions: [
       { value: "DD", label: "Most Recent" },
@@ -236,6 +239,7 @@ var SITES = {
     name: "Hacker News",
     hostPattern: /hn\.algolia\.com$/,
     searchPaths: ["/"],
+    spa: true,
     sortParam: "sort",
     sortOptions: [
       { value: "byDate", label: "Date" },
@@ -248,6 +252,7 @@ var SITES = {
     name: "npm",
     hostPattern: /npmjs\.com$/,
     searchPaths: ["/search"],
+    spa: true,
     sortParam: "ranking",
     sortOptions: [
       { value: "publish_date", label: "Recently Published" },
@@ -274,6 +279,7 @@ var SITES = {
     name: "Crates.io",
     hostPattern: /crates\.io$/,
     searchPaths: ["/search"],
+    spa: true,
     sortParam: "sort",
     sortOptions: [
       { value: "new", label: "Newly Added" },

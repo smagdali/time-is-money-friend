@@ -54,9 +54,9 @@
         "*://*.ebay.com.au/sch/*",
         "*://*.ebay.ca/sch/*",
         "*://*.etsy.com/search*",
-        "*://*.reddit.com/search*",
+        "*://*.reddit.com/*",
         "*://*.stackoverflow.com/search*",
-        "*://github.com/search*",
+        "*://github.com/*",
         "*://*.indeed.com/jobs*",
         "*://*.indeed.co.uk/jobs*",
         "*://*.walmart.com/search*",
@@ -75,12 +75,12 @@
         "*://*.vinted.lt/catalog*",
         "*://*.ikea.com/*",
         "*://*.gumtree.com/search*",
-        "*://*.linkedin.com/jobs/search*",
+        "*://*.linkedin.com/*",
         "*://*.reed.co.uk/jobs*",
         "*://hn.algolia.com/*",
-        "*://*.npmjs.com/search*",
+        "*://*.npmjs.com/*",
         "*://pypi.org/search*",
-        "*://crates.io/search*",
+        "*://crates.io/*",
         "*://*.rightmove.co.uk/property-for-sale/find*",
         "*://*.rightmove.co.uk/property-to-rent/find*",
         "*://*.zoopla.co.uk/for-sale/*",
@@ -88,6 +88,19 @@
       ],
       "js": ["sites.js", "content.js"],
       "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "*://*.reddit.com/*",
+        "*://github.com/*",
+        "*://*.linkedin.com/*",
+        "*://*.npmjs.com/*",
+        "*://crates.io/*",
+        "*://hn.algolia.com/*"
+      ],
+      "js": ["spa-monitor.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
     }
   ],
   "browser_specific_settings": {
